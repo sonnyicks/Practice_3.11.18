@@ -2,8 +2,7 @@
 
 int main(){
 	using namespace std;
-	int i, max; 
-	int score[5]; 
+	int i, max, score[5];
 	
 	cout << "Enter 5 scores: " << endl;
 	cin >> score[0];
@@ -14,9 +13,9 @@ int main(){
 			max=score[i];
 		}
 	}
-	cout << "The largest score is " << max <<endl;
-	cout << "The scores and their \n";
-	cout << "differences from the highest are : \n";
+	cout << "The largest score is " << max <<endl
+	<< "The scores and their \n"
+	<< "differences from the highest are : \n";
 	for (i=0; i<5; i++){
 		cout << score[i] << " off by " 
 		<< (max - score[i]) << endl;
